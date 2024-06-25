@@ -1,0 +1,18 @@
+{
+    "builds":[
+        {
+            "src":"src/tailwind.html",
+            "use":"@vercel/static"
+        },
+        {
+            "src":"src/input.css",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"/src/tailwind.html"
+        }
+    ]
+}
